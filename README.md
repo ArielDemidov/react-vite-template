@@ -1,6 +1,6 @@
 # Starting point for React apps
 
-This is an opinionated starting point, to get you going with React & Vite.
+Semi attributed to https://github.com/nbilalis/react-vite-ts-eslint-prettier-template.git
 
 ## It uses
 
