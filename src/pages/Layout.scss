@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'Heebo';
+	src: url(../assets/fonts/Heebo-VariableFont_wght.ttf);
+}
+
+body {
+	--main-color: #{$main-color};
+	--main-accent-color: #{$main-accent-color};
+	--secondary-accent-color: #{$secondary-accent-color};
+	--main-background-color: #{$main-background-color};
+	--secondary-background-color: #{$secondary-background-color};
+	--hint-color: #{$hint-color};
+	--upload-border-color: #{$upload-border-color};
+	--submit-color: #{$upload-button-dark};
+	--upload-button-box-shadow: #{$upload-button-box-shadow-dark};
+	--trash-button: #{$trash-button-dark};
+	--side-container: #{$side-container-dark};
+
+	&.light {
+		--main-color: #{$secondary-color};
+		--main-accent-color: #{$main-background-color};
+		--secondary-accent-color: #{$secondary-background-color};
+		--main-background-color: #{$main-accent-color};
+		--secondary-background-color: #{$secondary-accent-color};
+		--hint-color: #{$hint-color-light};
+		--upload-border-color: #{$upload-border-color-light};
+		--submit-color: #{$upload-button};
+		--upload-button-box-shadow: #{$upload-button-box-shadow};
+		--trash-button: #{$trash-button};
+		--side-container: #{$side-container};
+	}
+
+	background-color: var(--main-background-color);
+	color: var(--main-accent-color);
+	font-family: Heebo,
+	Open Sans,
+	-apple-system,
+	ui-sans-serif,
+	system-ui,
+	BlinkMacSystemFont,
+	Segoe UI,
+	Roboto,
+	Helvetica Neue,
+	Arial,
+	Noto Sans,
+	sans-serif,
+	Apple Color Emoji,
+	Segoe UI Emoji,
+	Segoe UI Symbol,
+	Noto Color Emoji;
+
+	transition: color 0.5s;
+	transition: background-color 0.5s;
+
+	margin: 0 4em;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	height: min-content;
+}
+
+main {
+	height: auto;
+}
+
+footer {
+	height: min-content;
+}
+
+p {
+	font-weight: 500;
+}
+
+*:focus {
+	outline: none;
+}
+
+* {
+	user-select: none;
+}

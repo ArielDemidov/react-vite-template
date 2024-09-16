@@ -1,0 +1,32 @@
+{
+	"editor.insertSpaces": true,
+	"files.autoSave": "onFocusChange",
+	/* "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.variableTypes.enabled": true,
+
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.variableTypes.enabled": true, */
+	"vscode-edge-devtools.webhint": false,
+	"[javascript][typescript][javascriptreact][typescriptreact][scss][jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"*.jsx": "$(capture).css, $(capture).*.css, $(capture).scss, $(capture).*.scss",
+		"*.tsx": "$(capture).css, $(capture).*.css, $(capture).scss, $(capture).*.scss"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"workbench.editorAssociations": {
+		"*.md": "vscode.markdown.preview.editor",
+	}
+}

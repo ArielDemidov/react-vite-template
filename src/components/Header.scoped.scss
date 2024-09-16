@@ -1,0 +1,29 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	border-bottom: 2px solid var(--secondary-background-color);
+}
+
+.wrapper {
+	display: flex;
+	gap: 0.25em;
+	align-items: baseline;
+	font-size: 1.5em;
+	font-weight: 500;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 1em 0 0.5em;
+	font-weight: 800;
+}
+
+.sub-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
